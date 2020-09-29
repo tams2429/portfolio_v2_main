@@ -1,5 +1,13 @@
 @import '~bulma/bulma.sass';
 
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Proza+Libre&family=Roboto&family=Rubik&display=swap');
+
+// font-family: 'Karla', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Proza Libre', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Rubik', sans-serif;
+
 //* General styles
 .main-container{
   padding: 0 2%;
@@ -37,5 +45,94 @@
         border-bottom: none;
       }
     }
+  }
+}
+
+//* Home page styles
+.home-container{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+  .box-border{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    border: 5px solid black;
+    .titles{
+      margin-top: -20vh;
+      p{
+        font-family: 'Karla', sans-serif;
+        font-size: 4.6rem;
+        padding: 0 3rem;
+        animation: titleBox 1s 44s ease;
+        animation-fill-mode: forwards;
+        color: black;
+        .name{
+          color: blue;
+        }
+        .typing{
+          margin-left: 0.2rem;
+          position: relative;
+          color: blue;
+        }
+        .typing::after{
+          content: "";
+          width: 0.08rem;
+          height: 70%;
+          border-left: 0.1rem solid black;
+          animation: blink 0.9s infinite ease;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .home-container{
+    .box-border{
+      height: 40vh;
+      .titles{
+        margin-top: -10vh;
+        p{
+          font-size: 1.5rem;
+          padding: 0 1rem;
+          .typing{
+            margin-left: 0.2rem;
+            position: relative;
+            color: blue;
+          }
+          .typing::after{
+            content: "";
+            width: 0.08rem;
+            height: 70%;
+            border-left: 0.1rem solid black;
+            animation: blink 0.9s infinite ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes titleBox{
+  0%{
+      border: 0.5rem solid black;
+  }
+  100%{
+      border: 0.5rem solid transparent;
+  }
+}
+
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
