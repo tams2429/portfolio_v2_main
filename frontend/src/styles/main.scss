@@ -1,0 +1,41 @@
+@import '~bulma/bulma.sass';
+
+//* General styles
+.main-container{
+  padding: 0 2%;
+}
+
+//* Navbar styles
+
+.navbar{
+  .navbar-brand{
+    .navbar-item{
+      .brand-logo{
+        min-width: 80px;
+        min-height: 50px;
+        object-fit: cover;
+      }
+    }
+    .navbar-burger{
+      margin-top: 10px;
+      span{
+        height: 2px;
+        width: 20px;
+      }
+    }
+  }
+  .navbar-menu{
+    .navbar-end{
+      .navbar-item:hover{
+        border-bottom: 2px solid blue;
+      }
+    }
+  }
+  div.navbar-menu.is-active{
+    .navbar-end{
+      .navbar-item:hover{
+        border-bottom: none;
+      }
+    }
+  }
+}
