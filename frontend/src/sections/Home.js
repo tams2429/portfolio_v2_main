@@ -1,5 +1,11 @@
 import React from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+
+
 const texts = ['Programmer', 'Coffee Addict', 'Whisky Enthusiast', 'Outside-The-Box Thinker']
   let element = 0
   let index = 0
@@ -58,7 +64,9 @@ function Home() {
           </button>
         </div>
         <div className="icon-container">
-
+          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faEnvelope} />
         </div>
       </div>
     </div>
