@@ -23,7 +23,6 @@ function Home() {
         setvariableText(letter)
       } else if(index > 0){
         letter = currentText.slice(0, --index)
-        console.log(letter)
         setvariableText(letter)
         setTimeout(erase, 100)
       } else{
@@ -52,21 +51,23 @@ function Home() {
   return (
     <div className="home-container" id="home" >
       <div className="box-border">
-        <div className="titles">
-            <p>Hi,
-              <br/>My name is <strong className='name'>Siu Kei</strong>,
-              <br/>I'm a <em><span className='typing'>{variableText}</span></em>
-            </p>
-        </div>
-        <div className="button-container">
-          <button className="start-button">
-            LET'S GET STARTED
-          </button>
-        </div>
-        <div className="icon-container">
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faLinkedin} />
-          <FontAwesomeIcon icon={faEnvelope} />
+        <div className="innerbox-border">
+          <div className="titles">
+              <p>Hi,
+                <br/>My name is <strong className='name'>Siu Kei</strong>,
+                <br/>I'm a <em><span className='typing'>{variableText}</span></em>
+              </p>
+          </div>
+          <div className="button-container">
+            <button className="start-button">
+              LET'S GET STARTED
+            </button>
+          </div>
+          <div className="icon-container">
+            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faEnvelope} />
+          </div>
         </div>
       </div>
     </div>

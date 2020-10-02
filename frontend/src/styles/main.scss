@@ -70,67 +70,22 @@
     border: 5px solid black;
     animation: titleBox 1s 38s ease;
     animation-fill-mode: forwards;
-    .titles{
-      margin-top: -20vh;
-      p{
-        font-family: 'Karla', sans-serif;
-        font-size: 74px;
-        padding: 0 48px;
-        color: black;
-        .name{
-          color: blue;
-        }
-        .typing{
-          margin-left: 3px;
-          position: relative;
-          color: blue;
-        }
-        .typing::after{
-          content: "";
-          width: 1.3px;
-          height: 70%;
-          border-left: 1.6px solid black;
-          animation: blink 0.9s infinite ease;
-        }
-      }
-    }
-    .button-container{
-      padding: 0 48px;
-      .start-button{
-        font-family: 'Karla', sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        width: 30%;
-        height: 50px;
-        background-color: transparent;
-        border: 2px solid black;
-        cursor: pointer;
-        border-radius: 5px;
-        padding: 10px 0;
-      }
-      .start-button:hover{
-        background-color: black;
-        color: white;
-      }
-    }
-    .icon-container{
+    .innerbox-border{
+      height: 75%;
       display: flex;
-    }
-  }
-}
-
-@media only screen and (max-width: 450px){
-  .home-container{
-    .box-border{
-      height: 40vh;
+      flex-direction: column;
+      justify-content: space-between;
       .titles{
-        margin-top: -10vh;
         p{
-          font-size: 24px;
-          padding: 0 16px;
+          font-family: 'Karla', sans-serif;
+          font-size: 74px;
+          padding: 0 48px;
+          color: black;
+          .name{
+            color: blue;
+          }
           .typing{
-            margin-left: 3.2px;
+            margin-left: 3px;
             position: relative;
             color: blue;
           }
@@ -144,19 +99,93 @@
         }
       }
       .button-container{
-        padding: 0 16px;
+        padding: 0 48px;
         .start-button{
           font-family: 'Karla', sans-serif;
           font-size: 18px;
           font-weight: bold;
           text-align: center;
           width: 30%;
+          height: 50px;
           background-color: transparent;
           border: 2px solid black;
           cursor: pointer;
-          border-radius: 5%;
+          border-radius: 5px;
+          padding: 10px 0;
+        }
+        .start-button:hover{
+          background-color: black;
+          color: white;
         }
       }
+      .icon-container{
+        display: flex;
+        width: 10%;
+        justify-content: space-between;
+        margin: 0 48px;
+        margin-top: -50px;
+        svg {
+          color: black;
+          font-size: 32px;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .home-container{
+    .box-border{
+      height: 40vh;
+      .innerbox-border{
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .titles{
+          p{
+            font-size: 20px;
+            padding: 0 16px;
+            .typing{
+              margin-left: 3.2px;
+              position: relative;
+              color: blue;
+            }
+            .typing::after{
+              content: "";
+              width: 1.3px;
+              height: 70%;
+              border-left: 1.6px solid black;
+              animation: blink 0.9s infinite ease;
+            }
+          }
+        }
+        .button-container{
+          padding: 0 16px;
+          .start-button{
+            font-family: 'Karla', sans-serif;
+            font-size: 10px;
+            height: 35px;
+            width: 50%;
+            background-color: transparent;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 5%;
+          }
+        }
+        .icon-container{
+          width: 20%;
+          justify-content: space-between;
+          margin-left: 16px;
+          margin-top: -20px;
+          svg {
+            color: black;
+            font-size: 16px;
+          }
+        }
+      }
+
     }
   }
 }
