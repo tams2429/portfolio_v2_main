@@ -134,6 +134,95 @@
   }
 }
 
+@media only screen and (max-width: 1200px){
+  .home-container{
+    .box-border{
+      height: 55vh;
+      .innerbox-border{
+        .titles{
+          p {
+            font-size: 48px;
+          }
+        }
+        .button-container{
+          .start-button{
+            font-size: 14px;
+          }
+        }
+        .icon-container{
+          justify-content: space-between;
+          margin-top: -60px;
+          svg {
+            font-size: 28px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px){
+  .home-container{
+    .box-border{
+      height: 50vh;
+      .innerbox-border{
+        .titles{
+          p {
+            font-size: 38px;
+          }
+        }
+        .button-container{
+          .start-button{
+            font-family: 'Karla', sans-serif;
+            font-size: 14px;
+            height: 45px;
+            width: 40%;
+          }
+        }
+        .icon-container{
+          justify-content: space-between;
+          margin-top: -60px;
+          svg {
+            font-size: 24px;
+            margin-right: 10px
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px){
+  .home-container{
+    .box-border{
+      height: 40vh;
+      .innerbox-border{
+        .titles{
+          p {
+            font-size: 30px;
+          }
+        }
+        .button-container{
+          .start-button{
+            font-family: 'Karla', sans-serif;
+            font-size: 12px;
+            height: 45px;
+            width: 40%;
+          }
+        }
+        .icon-container{
+          width: 15%;
+          justify-content: space-between;
+          margin-top: -30px;
+          svg {
+            font-size: 20px;
+            margin-right: 10px
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 450px){
   .home-container{
     .box-border{
@@ -168,10 +257,6 @@
             font-size: 10px;
             height: 35px;
             width: 50%;
-            background-color: transparent;
-            border: 2px solid black;
-            cursor: pointer;
-            border-radius: 5%;
           }
         }
         .icon-container{
@@ -180,7 +265,6 @@
           margin-left: 16px;
           margin-top: -20px;
           svg {
-            color: black;
             font-size: 16px;
           }
         }
