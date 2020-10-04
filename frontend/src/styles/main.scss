@@ -1,5 +1,6 @@
 @import '~bulma/bulma.sass';
 
+
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Proza+Libre&family=Roboto&family=Rubik&display=swap');
 
 // font-family: 'Karla', sans-serif;
@@ -112,6 +113,8 @@
           cursor: pointer;
           border-radius: 5px;
           padding: 10px 0;
+          animation: fadeInLeft 1s 39s ease;
+          animation-fill-mode: both;
         }
         .start-button:hover{
           background-color: black;
@@ -127,6 +130,9 @@
         svg {
           color: black;
           font-size: 32px;
+          margin-right: 10px;
+          animation: fadeInUp 1s 40s ease;
+          animation-fill-mode: both;
         }
       }
     }
@@ -154,7 +160,6 @@
           margin-top: -60px;
           svg {
             font-size: 28px;
-            margin-right: 10px;
           }
         }
       }
@@ -173,7 +178,6 @@
         }
         .button-container{
           .start-button{
-            font-family: 'Karla', sans-serif;
             font-size: 14px;
             height: 45px;
             width: 40%;
@@ -184,7 +188,6 @@
           margin-top: -60px;
           svg {
             font-size: 24px;
-            margin-right: 10px
           }
         }
       }
@@ -215,7 +218,6 @@
           margin-top: -30px;
           svg {
             font-size: 20px;
-            margin-right: 10px
           }
         }
       }
@@ -239,7 +241,6 @@
             .typing{
               margin-left: 3.2px;
               position: relative;
-              color: blue;
             }
             .typing::after{
               content: "";
@@ -253,7 +254,6 @@
         .button-container{
           padding: 0 16px;
           .start-button{
-            font-family: 'Karla', sans-serif;
             font-size: 10px;
             height: 35px;
             width: 50%;
@@ -273,6 +273,7 @@
     }
   }
 }
+
 
 @keyframes titleBox{
   0%{
