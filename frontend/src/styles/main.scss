@@ -100,42 +100,46 @@
           }
         }
       }
-      .button-container{
-        padding: 0 48px;
-        .start-button{
-          font-family: 'Karla', sans-serif;
-          font-size: 18px;
-          font-weight: bold;
-          text-align: center;
-          width: 30%;
-          height: 50px;
-          background-color: transparent;
-          border: 2px solid black;
-          cursor: pointer;
-          border-radius: 5px;
-          padding: 10px 0;
-          animation: fadeInLeft 1s 39s ease;
-          animation-fill-mode: both;
+      .button-icon-container{
+        padding-top: 6%;
+        .button-container{
+          padding: 0 48px;
+          .start-button{
+            font-family: 'Karla', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            width: 30%;
+            height: 50px;
+            background-color: transparent;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px 0;
+            animation: fadeInLeft 1s 39s ease;
+            animation-fill-mode: both;
+          }
+          .start-button:hover{
+            background-color: black;
+            color: white;
+          }
         }
-        .start-button:hover{
-          background-color: black;
-          color: white;
+        .icon-container{
+          display: flex;
+          width: 10%;
+          justify-content: space-between;
+          margin: 0 48px;
+          margin-top: 2%;
+          svg {
+            color: black;
+            font-size: 32px;
+            margin-right: 10px;
+            animation: fadeInUp 1s 40s ease;
+            animation-fill-mode: both;
+          }
         }
       }
-      .icon-container{
-        display: flex;
-        width: 10%;
-        justify-content: space-between;
-        margin: 0 48px;
-        margin-top: -50px;
-        svg {
-          color: black;
-          font-size: 32px;
-          margin-right: 10px;
-          animation: fadeInUp 1s 40s ease;
-          animation-fill-mode: both;
-        }
-      }
+
     }
 
   }
@@ -151,16 +155,17 @@
             font-size: 48px;
           }
         }
-        .button-container{
-          .start-button{
-            font-size: 14px;
+        .button-icon-container{
+          .button-container{
+            .start-button{
+              font-size: 14px;
+            }
           }
-        }
-        .icon-container{
-          justify-content: space-between;
-          margin-top: -60px;
-          svg {
-            font-size: 28px;
+          .icon-container{
+            justify-content: space-between;
+            svg {
+              font-size: 28px;
+            }
           }
         }
       }
@@ -177,20 +182,22 @@
             font-size: 38px;
           }
         }
-        .button-container{
-          .start-button{
-            font-size: 14px;
-            height: 45px;
-            width: 40%;
+        .button-icon-container{
+          .button-container{
+            .start-button{
+              font-size: 14px;
+              height: 45px;
+              width: 40%;
+            }
+          }
+          .icon-container{
+            justify-content: space-between;
+            svg {
+              font-size: 24px;
+            }
           }
         }
-        .icon-container{
-          justify-content: space-between;
-          margin-top: -60px;
-          svg {
-            font-size: 24px;
-          }
-        }
+
       }
     }
   }
@@ -205,22 +212,24 @@
             font-size: 30px;
           }
         }
-        .button-container{
-          .start-button{
-            font-family: 'Karla', sans-serif;
-            font-size: 12px;
-            height: 45px;
-            width: 40%;
+        .button-icon-container{
+          .button-container{
+            .start-button{
+              font-family: 'Karla', sans-serif;
+              font-size: 12px;
+              height: 45px;
+              width: 40%;
+            }
+          }
+          .icon-container{
+            width: 15%;
+            justify-content: space-between;
+            svg {
+              font-size: 20px;
+            }
           }
         }
-        .icon-container{
-          width: 15%;
-          justify-content: space-between;
-          margin-top: -30px;
-          svg {
-            font-size: 20px;
-          }
-        }
+
       }
     }
   }
@@ -252,23 +261,27 @@
             }
           }
         }
-        .button-container{
-          padding: 0 16px;
-          .start-button{
-            font-size: 10px;
-            height: 35px;
-            width: 50%;
+        .button-icon-container{
+          padding-top: 10%;
+          .button-container{
+            padding: 0 16px;
+            .start-button{
+              font-size: 10px;
+              height: 35px;
+              width: 50%;
+            }
+          }
+          .icon-container{
+            width: 20%;
+            justify-content: space-between;
+            margin-left: 16px;
+            margin-top: 0;
+            svg {
+              font-size: 16px;
+            }
           }
         }
-        .icon-container{
-          width: 20%;
-          justify-content: space-between;
-          margin-left: 16px;
-          margin-top: -20px;
-          svg {
-            font-size: 16px;
-          }
-        }
+
       }
 
     }

@@ -58,22 +58,25 @@ function Home() {
                 <br/>I'm a <em><span className='typing'>{variableText}</span></em>
               </p>
           </div>
-          <div className="button-container">
-            <button className="start-button animate__animated animate__fadeInLeft">
-              LET'S GET STARTED
-            </button>
+          <div className="button-icon-container">
+            <div className="button-container">
+              <button className="start-button animate__animated animate__fadeInLeft">
+                LET'S GET STARTED
+              </button>
+            </div>
+            <div className="icon-container">
+              <a href="https://github.com/tams2429">
+                <FontAwesomeIcon icon={faGithub} className="github-icon animate__animated animate__fadeInUp"/>
+              </a>
+              <a href="https://www.linkedin.com/in/siukeitam/">
+                <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon animate__animated animate__fadeInUp"/>
+              </a>
+              <a href="mailto:tam.s.k.92@gmail.com">
+                <FontAwesomeIcon icon={faEnvelope} className="email-icon animate__animated animate__fadeInUp"/>
+              </a>
+            </div>
           </div>
-          <div className="icon-container">
-            <a href="https://github.com/tams2429">
-              <FontAwesomeIcon icon={faGithub} className="github-icon animate__animated animate__fadeInUp"/>
-            </a>
-            <a href="https://www.linkedin.com/in/siukeitam/">
-              <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon animate__animated animate__fadeInUp"/>
-            </a>
-            <a href="mailto:tam.s.k.92@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} className="email-icon animate__animated animate__fadeInUp"/>
-            </a>
-          </div>
+
         </div>
       </div>
     </div>
