@@ -12,6 +12,7 @@
 //* General styles
 .main-container{
   padding: 0 2%;
+  padding-right: 0;
 }
 
 //* Navbar styles
@@ -58,7 +59,7 @@
 //* Home page styles
 .home-container{
   display: flex;
-  height: 100vh;
+  height: 110vh;
   align-items: center;
   justify-content: center;
   margin-top: -70px;
@@ -293,3 +294,67 @@
   }
 }
 
+
+//* About page styles
+.about-container{
+  display: flex;
+  padding-top: 70px;
+  .about-diagrams{
+    width: 40%;
+    padding-top: 5%;
+    .vertical-timeline{
+      padding: 0;
+      .vertical-timeline-element{
+        margin: 16px 0;
+        .vertical-timeline-element-icon{
+          width: 40px;
+          height: 40px;
+          box-shadow: none;
+        }
+        .vertical-timeline-element-content{
+          padding: 10px;
+          .p{
+            font-family: 'Karla', sans-serif;
+          }
+          .vertical-timeline-element-content-arrow{
+            top: 10px;
+          }
+        }
+      }
+    }
+    .vertical-timeline::before{
+      background: #000;
+    }
+  }
+  .about-text{
+    width: 60%;
+    padding: 0 5%;
+    .about-title{
+      margin-bottom: 15%;
+      font-family: 'Proza Libre', sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+    }
+    .about-content{
+      // font-family: 'Karla', sans-serif;
+      // font-family: 'Montserrat', sans-serif;
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .about-container{
+    flex-direction: column-reverse;
+    .about-diagrams{
+      width: 100%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-right: 5%;
+    }
+    .about-text{
+      width: 100%;
+    }
+  }
+}

@@ -17,6 +17,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "react-vertical-timeline-component": "^3.0.2",
     "swiper": "^6.3.2",
     "vanilla-tilt": "^1.7.0"
   },
