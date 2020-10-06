@@ -387,3 +387,23 @@
     }
   }
 }
+
+//* Projects page styles
+.projects-container{
+  display: flex;
+  // height: 110vh;
+  padding-top: 70px;
+  flex-direction: column;
+  .projects-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >div{
+      width: 40%;
+      min-height: 200px;
+      margin: 10% 5%;
+      border: 1px solid black;
+    }
+  }
+
+}
