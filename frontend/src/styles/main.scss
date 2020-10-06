@@ -8,16 +8,21 @@
 // font-family: 'Proza Libre', sans-serif;
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Rubik', sans-serif;
+// background: #f8f9fa;
 
 //* General styles
 .main-container{
+  overflow: hidden;
+}
+
+.page-container{
   padding: 0 2%;
-  padding-right: 0;
 }
 
 //* Navbar styles
 
 .navbar{
+  padding: 0 2%;
   .navbar-brand{
     .navbar-item{
       .brand-logo{
@@ -353,6 +358,17 @@
       // font-family: 'Montserrat', sans-serif;
       font-family: 'Rubik', sans-serif;
       font-size: 14px;
+    }
+    .about-skills{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 10%;
+      text-align: center;
+      i{
+        width: 20%;
+        font-size: 50px;
+        margin-bottom: 10%;
+      }
     }
   }
 }

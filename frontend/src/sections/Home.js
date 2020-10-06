@@ -49,7 +49,7 @@ function Home() {
   }, [])
 
   return (
-    <div className="home-container" id="home" >
+    <div className="home-container page-container" id="home" >
       <div className="box-border">
         <div className="innerbox-border">
           <div className="titles">
