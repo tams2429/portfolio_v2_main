@@ -84,25 +84,26 @@
   height: 110vh;
   align-items: center;
   justify-content: center;
-  margin-top: -70px;
+  // margin-top: -70px;
   .box-border{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 90%;
-    height: 70vh;
+    // height: 70vh;
     border: 5px solid black;
     animation: titleBox 1s 38s ease;
     animation-fill-mode: forwards;
     .innerbox-border{
-      height: 75%;
+      // height: 75%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding: 2% 0;
       .titles{
         p{
           font-family: 'Karla', sans-serif;
-          font-size: 74px;
+          font-size: 60px;
           padding: 0 48px;
           color: black;
           .name{
@@ -123,7 +124,7 @@
         }
       }
       .button-icon-container{
-        padding-top: 6%;
+        padding-top: 3%;
         .button-container{
           padding: 0 48px;
           .start-button{
@@ -158,6 +159,10 @@
             margin-right: 10px;
             animation: fadeInUp 1s 40s ease;
             animation-fill-mode: both;
+            transition: transform 1s;
+          }
+          svg:hover{
+            transform: scale(1.5);
           }
         }
       }
@@ -170,7 +175,7 @@
 @media only screen and (max-width: 1200px){
   .home-container{
     .box-border{
-      height: 55vh;
+      // height: 55vh;
       .innerbox-border{
         .titles{
           p {
@@ -197,15 +202,17 @@
 @media only screen and (max-width: 900px){
   .home-container{
     .box-border{
-      height: 50vh;
+      // height: 50vh;
       .innerbox-border{
         .titles{
           p {
             font-size: 38px;
+            padding: 0 32px;
           }
         }
         .button-icon-container{
           .button-container{
+            padding: 0 32px;
             .start-button{
               font-size: 14px;
               height: 45px;
@@ -214,6 +221,8 @@
           }
           .icon-container{
             justify-content: space-between;
+            margin: 0 32px;
+            margin-top: 2%;
             svg {
               font-size: 24px;
             }
@@ -227,7 +236,7 @@
 @media only screen and (max-width: 700px){
   .home-container{
     .box-border{
-      height: 40vh;
+      // height: 40vh;
       .innerbox-border{
         .titles{
           p {
@@ -260,9 +269,9 @@
 @media only screen and (max-width: 450px){
   .home-container{
     .box-border{
-      height: 40vh;
+      // height: 40vh;
       .innerbox-border{
-        height: 70%;
+        // height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -538,13 +547,17 @@
     width: 100%;
     height: 30%;
     padding: 30px;
-    div .project-titles{
+    div .project-headers{
       font-family: 'Rubik', sans-serif;
-      >h2 {
-        font-size: 24px;
-        font-weight: bold;
+      .project-title {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-size: 24px;
+          font-weight: bold;
+        }
       }
-      >h3 {
+      h3 {
         font-size: 18px;
         font-weight: bold;
       }
@@ -553,5 +566,46 @@
       font-family: 'Rubik', sans-serif;
       font-size: 14px;
     }
+  }
+}
+
+//* Footer Styles
+.footer-container{
+  text-align: center;
+  margin-top: 70px;
+  background-color: black;
+  height: 30vh;
+  color: white;
+  .footer-text{
+    font-family: 'Karla', sans-serif;
+    // font-family: 'Proza Libre', sans-serif;
+    >h2{
+      font-size: 38px;
+    }
+    >h3{
+      font-size: 24px;
+    }
+  }
+  .footer-icons{
+    svg {
+      color: white;
+      font-size: 24px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: transform 1s;
+    }
+    svg:hover{
+      transform: scale(1.5);
+    }
+  }
+  .footer-divider{
+    color: #333533;
+    margin: 20px 40px;
+    margin-bottom: 10px;
+    height: 1px;
+  }
+  .footer-copyright{
+    font-family: 'Karla', sans-serif;
+    font-size: 10px;
   }
 }

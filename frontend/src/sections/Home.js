@@ -60,9 +60,11 @@ function Home() {
           </div>
           <div className="button-icon-container">
             <div className="button-container">
-              <button className="start-button animate__animated animate__fadeInLeft">
-                LET'S GET STARTED
-              </button>
+              <a href="#about">
+                <button className="start-button animate__animated animate__fadeInLeft">
+                  LET'S GET STARTED
+                </button>
+              </a>
             </div>
             <div className="icon-container">
               <a href="https://github.com/tams2429">

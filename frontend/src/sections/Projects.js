@@ -6,6 +6,11 @@ import Tilt from 'react-tilt'
 import ThumbnailGallery from '../components/ThumbnailGallery'
 
 function Projects() {
+
+  React.useEffect(() => {
+    AOS.init({})
+  }, [])
+
   // const [project1gifTriggered, setproject1gifTriggered] = React.useState(false)
   // const [project2gifTriggered, setproject2gifTriggered] = React.useState(false)
   // const [project3gifTriggered, setproject3gifTriggered] = React.useState(false)
@@ -43,7 +48,7 @@ function Projects() {
 
   return (
     <div className="projects-container page-container" id="projects">
-      <div className="projects-title">
+      <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" className="projects-title">
         <h2>Projects</h2>
       </div>
       <ThumbnailGallery />
