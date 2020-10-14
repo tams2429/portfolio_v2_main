@@ -87,9 +87,19 @@ const About = () => {
         </div>
         <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"  className="about-content">
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed elementum tempus egestas sed sed risus pretium. Adipiscing diam donec adipiscing tristique risus nec feugiat. A pellentesque sit amet porttitor eget dolor morbi. Consectetur a erat nam at lectus urna duis convallis convallis. Tristique magna sit amet purus gravida. Et odio pellentesque diam volutpat commodo. Etiam dignissim diam quis enim. Diam vel quam elementum pulvinar etiam non. Nunc scelerisque viverra mauris in aliquam sem. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Morbi tristique senectus et netus et malesuada.
-
-          Fames ac turpis egestas maecenas pharetra convallis posuere. Malesuada fames ac turpis egestas integer eget aliquet. Venenatis urna cursus eget nunc scelerisque. Accumsan tortor posuere ac ut consequat semper viverra nam libero. Congue nisi vitae suscipit tellus mauris a diam maecenas. Vitae turpis massa sed elementum tempus egestas sed sed. At erat pellentesque adipiscing commodo elit at imperdiet. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Et magnis dis parturient montes nascetur. Mollis nunc sed id semper risus in hendrerit. Consectetur lorem donec massa sapien faucibus et. Vitae auctor eu augue ut lectus arcu bibendum at. Morbi leo urna molestie at elementum. Nunc consequat interdum varius sit amet mattis. Risus viverra adipiscing at in tellus integer. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Non sodales neque sodales ut etiam sit amet nisl.
+          I am a <u><strong>Full-Stack Developer</strong></u>, Ex-Geotechnical Engineer looking for my next opportunity to further hone my <u><strong>problem solving</strong></u> and my budding interest in <u><strong>design</strong></u>.
+          <br></br>
+          <br></br>
+          In the past 4 years, having worked on major infrastructure projects like <u><strong>HS2</strong></u>, I have thoroughly enjoyed <u><strong>working together in teams</strong></u> to <u><strong>solve unconventional problems</strong></u>. Through opportunities in and outside of work, I was fortunate enough to be exposed to the world of coding and experience the satisfaction that comes from both <u><strong>solving a difficult coding problem</strong></u> and <u><strong>building an aesthetic, Front-End UI</strong></u>. Thus, I wish to start anew in a career where I can combine both problem solving and design.
+          <br></br>
+          <br></br>
+          I have recently graduated from General Assembly's 12 week, <u><strong>Software Engineering Immersive Course</strong></u> which covered the fundamentals of <u><strong>Full-Stack development</strong></u> along with <u><strong>agile methodologies</strong></u>. This included, but not limited to, the following stack: <u><strong>React JS, JavaScript, Node JS with Express, Mongo DB, Django with Python</strong></u>.
+          <br></br>
+          <br></br>
+          This portfolio site has been created with mainly React JS, HTML5, SCSS (with Bulma) and other libraries. For details, please have a look at my GitHub repositry for this.
+          <br></br>
+          <br></br>
+          Check out my projects and look forward to collaborating with you soon!
           </p>
         </div>
         <div className="about-skills">
