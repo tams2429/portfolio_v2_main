@@ -130,7 +130,7 @@ function ThumbnailGallery() {
               </div>
             </div>
 
-            <h3>React JS | HTML5 | SCSS | AntDesign | Django | Python |PostgreSQL DB - Solo</h3>
+            <h3>React JS | HTML5 | SCSS | AntDesign | Django | Python | PostgreSQL DB - Solo</h3>
           </div>
           <div className="project-description">
             Momen2um is a productivity app, inspired by the Chrome Extension, Momentum, with the aim to create an app for daily use, by adding custom features such as a video player, a news article feed, a to-do list and a countdown/workout timer, all available in one location. This is a full-stack app utilising the following technologies: <strong>React JS, Django with Python, PostgreSQL Database, HTML5, SCSS with Bulma framework and AntDesign.</strong>
