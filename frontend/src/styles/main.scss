@@ -34,13 +34,15 @@
 
 .page-container{
   padding: 0 2%;
+  padding-top: 5%;
 }
 
 //* Navbar styles
 
 .navbar{
-  padding: 0 2%;
+  background-color: transparent;
   .navbar-brand{
+    padding-right: 2%;
     .navbar-item{
       .brand-logo{
         min-width: 80px;
@@ -50,6 +52,7 @@
     }
     .navbar-burger{
       margin-top: 10px;
+      color: white;
       span{
         height: 2px;
         width: 20px;
@@ -60,22 +63,78 @@
     .navbar-end{
       .navbar-item{
         font-size: 20px;
+        color: white;
       }
       .navbar-item:hover{
         border-bottom: 2px solid blue;
+        background-color: transparent;
+        // color: black;
       }
     }
   }
   div.navbar-menu.is-active{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0;
     .navbar-end{
       .navbar-item{
         font-size: 16px;
       }
       .navbar-item:hover{
         border-bottom: none;
+        background-color: white;
+        color: black;
       }
     }
   }
+}
+
+.navbar.is-scrolled{
+  background-color: rgba(0, 0, 0, 0.9);
+  .navbar-brand{
+    .navbar-item{
+      .brand-logo{
+        min-width: 80px;
+        min-height: 50px;
+        object-fit: cover;
+      }
+    }
+    .navbar-burger{
+      margin-top: 10px;
+      color: white;
+      span{
+        height: 2px;
+        width: 20px;
+      }
+    }
+  }
+  .navbar-menu{
+    .navbar-end{
+      .navbar-item{
+        font-size: 20px;
+        color: white;
+      }
+      .navbar-item:hover{
+        border-bottom: 2px solid blue;
+        background-color: transparent;
+        // color: black;
+      }
+    }
+  }
+  div.navbar-menu.is-active{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0;
+    .navbar-end{
+      .navbar-item{
+        font-size: 16px;
+      }
+      .navbar-item:hover{
+        border-bottom: none;
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+
 }
 
 //* Home page styles
@@ -84,6 +143,8 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1513708929605-6dd0e1b081bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80');
+  background-size: cover;
   // margin-top: -70px;
   .box-border{
     display: flex;
@@ -91,8 +152,8 @@
     justify-content: center;
     width: 90%;
     // height: 70vh;
-    border: 5px solid black;
-    animation: titleBox 1s 38s ease;
+    border: 5px solid white;
+    animation: titleBox 1s 26s ease;
     animation-fill-mode: forwards;
     .innerbox-border{
       // height: 75%;
@@ -105,20 +166,20 @@
           font-family: 'Karla', sans-serif;
           font-size: 60px;
           padding: 0 48px;
-          color: black;
+          color: white;
           .name{
-            color: blue;
+            color: yellow;
           }
           .typing{
             margin-left: 3px;
             position: relative;
-            color: blue;
+            color: yellow;
           }
           .typing::after{
             content: "";
             width: 1.3px;
             height: 70%;
-            border-left: 1.6px solid black;
+            border-left: 1.6px solid white;
             animation: blink 0.9s infinite ease;
           }
         }
@@ -131,20 +192,22 @@
             font-family: 'Karla', sans-serif;
             font-size: 18px;
             font-weight: bold;
+            color: white;
             text-align: center;
             width: 30%;
             height: 50px;
             background-color: transparent;
-            border: 2px solid black;
+            border: 2px solid white;
             cursor: pointer;
             border-radius: 5px;
             padding: 10px 0;
-            animation: fadeInLeft 1s 39s ease;
+            animation: fadeInLeft 1s 27s ease;
             animation-fill-mode: both;
           }
           .start-button:hover{
-            background-color: black;
-            color: white;
+            background-color: white;
+            border: none;
+            color: black;
           }
         }
         .icon-container{
@@ -154,15 +217,11 @@
           margin: 0 48px;
           margin-top: 2%;
           svg {
-            color: black;
+            color: white;
             font-size: 32px;
             margin-right: 10px;
-            animation: fadeInUp 1s 40s ease;
+            animation: fadeInUp 1s 28s ease;
             animation-fill-mode: both;
-            transition: transform 1s;
-          }
-          svg:hover{
-            transform: scale(1.5);
           }
         }
       }
@@ -550,6 +609,7 @@
         height: 25%;
         background: red;
         border: 1px solid gray;
+        cursor: pointer;
         img{
           width: 100%;
           height: 100%;

@@ -38,11 +38,11 @@ function Home() {
         erase()
       } else if(element === texts.length-1) {
           if(index <= currentText.length) {
-              setTimeout(type, 400)
+              setTimeout(type, 250)
           }
           return
       } else {
-          setTimeout(type, 400)
+          setTimeout(type, 250)
       }
     }
     type()

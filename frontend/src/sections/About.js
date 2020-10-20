@@ -96,7 +96,7 @@ const About = () => {
           I have recently graduated from General Assembly's 12 week, <u><strong>Software Engineering Immersive Course</strong></u> which covered the fundamentals of <u><strong>Full-Stack development</strong></u> along with <u><strong>agile methodologies</strong></u>. This included, but not limited to, the following stack: <u><strong>React JS, JavaScript, Node JS with Express, Mongo DB, Django with Python</strong></u>.
           <br></br>
           <br></br>
-          This portfolio site has been created with mainly React JS, HTML5, SCSS (with Bulma) and other libraries. For details, please have a look at my GitHub repositry for this.
+          This portfolio site has been created with mainly React JS, HTML5, SCSS (with Bulma) and other libraries. For details, please have a look at my GitHub repository for this.
           <br></br>
           <br></br>
           Check out my projects and look forward to collaborating with you soon!
