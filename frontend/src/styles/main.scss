@@ -90,50 +90,6 @@
 
 .navbar.is-scrolled{
   background-color: rgba(0, 0, 0, 0.9);
-  .navbar-brand{
-    .navbar-item{
-      .brand-logo{
-        min-width: 80px;
-        min-height: 50px;
-        object-fit: cover;
-      }
-    }
-    .navbar-burger{
-      margin-top: 10px;
-      color: white;
-      span{
-        height: 2px;
-        width: 20px;
-      }
-    }
-  }
-  .navbar-menu{
-    .navbar-end{
-      .navbar-item{
-        font-size: 20px;
-        color: white;
-      }
-      .navbar-item:hover{
-        border-bottom: 2px solid blue;
-        background-color: transparent;
-        // color: black;
-      }
-    }
-  }
-  div.navbar-menu.is-active{
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 0;
-    .navbar-end{
-      .navbar-item{
-        font-size: 16px;
-      }
-      .navbar-item:hover{
-        border-bottom: none;
-        background-color: white;
-        color: black;
-      }
-    }
-  }
 
 }
 
@@ -381,7 +337,7 @@
 
 @keyframes titleBox{
   0%{
-    border: 5px solid black;
+    border: 5px solid white;
   }
   100%{
     border: 5px solid transparent;
@@ -445,11 +401,32 @@
       font-size: 16px;
       line-height: 1.8;
     }
-    .about-skills{
-      display: flex;
-      flex-wrap: wrap;
-      padding-top: 10%;
-      text-align: center;
+  }
+}
+
+.about-skills{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  margin-top: 5%;
+  .about-skills-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    text-align: center;
+    i{
+      width: 20%;
+      font-size: 72px;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px){
+  .about-skills{
+    .about-skills-container{
       i{
         width: 20%;
         font-size: 50px;
