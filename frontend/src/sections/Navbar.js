@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-scroll'
 
 
 function Navbar() {
@@ -25,10 +25,10 @@ function Navbar() {
   return (
     <nav className={navScrolled ? "navbar is-fixed-top is-scrolled" : "navbar is-fixed-top"} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#home">
+        <Link className="navbar-item" to="home" smooth={true} duration={1000}>
           <img src={require('../images/SK-logo (design 3).png')} className="brand-logo" >
           </img>
-        </a>
+        </Link>
         <a role="button" className={isClicked ? "navbar-burger burger is-active" : "navbar-burger burger"} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={handleClick}>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -37,15 +37,15 @@ function Navbar() {
       </div>
       <div className={isClicked ? "navbar-menu is-active" : "navbar-menu"}>
         <div className="navbar-end">
-          <a className="navbar-item" href="#about">
+          <Link className="navbar-item" to="about" smooth={true} duration={1000}>
             About
-          </a>
-          <a className="navbar-item" href="#projects">
+          </Link>
+          <Link className="navbar-item" to="projects" smooth={true} duration={1000}>
             Projects
-          </a>
-          <a className="navbar-item" href="#contactme">
+          </Link>
+          <Link className="navbar-item" to="contactme" smooth={true} duration={1000}>
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

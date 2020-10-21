@@ -9,8 +9,10 @@ const Skills = () => {
   }, [])
 
   return (
-    <div className="about-skills page-container">
-
+    <div className="about-skills page-container" id="skills">
+      <div className="about-skills-title">
+        <h2>Competent in</h2>
+      </div>
       <div className="about-skills-container">
         <i className="devicon-javascript-plain" data-aos="fade-right"></i>
         <i className="devicon-react-original-wordmark" data-aos="fade-down" ></i>

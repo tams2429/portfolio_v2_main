@@ -1,5 +1,5 @@
 @import '~bulma/bulma.sass';
-
+@import "~animate.css/animate.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Proza+Libre&family=Roboto&family=Rubik&display=swap');
 
@@ -30,6 +30,36 @@
 //* General styles
 .main-container{
   overflow: hidden;
+  >div:nth-child(3){
+    >div:nth-child(2){
+      div>a{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+        color: black;
+      }
+    }
+    >div:nth-child(4){
+      div>a{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+        color: black;
+      }
+    }
+  }
+  .transition-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .page-container{
@@ -404,12 +434,22 @@
   }
 }
 
+//#c9ada7 #3d405b
+
+
+
 .about-skills{
   width: 100%;
   display: flex;
-  justify-content: center;
-  background-color: gray;
+  flex-direction: column;
+  align-items: center;
+  // background-color: gray;
   margin-top: 5%;
+  .about-skills-title{
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+  }
   .about-skills-container{
     width: 100%;
     display: flex;
@@ -460,6 +500,16 @@
     }
     .about-text{
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .about-skills{
+    padding-top: 20%;
+    .about-skills-container{
+      i{
+      }
     }
   }
 }
