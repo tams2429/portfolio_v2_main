@@ -30,12 +30,10 @@ function ThumbnailGallery() {
   }, [])
 
   const handleMouseEnter = () => {
-    console.log(projectGifTriggered)
     return setprojectGifTriggered(!projectGifTriggered)
   }
 
   const handleMouseLeave = () => {
-    console.log(projectGifTriggered)
     return setprojectGifTriggered(!projectGifTriggered)
   }
 
