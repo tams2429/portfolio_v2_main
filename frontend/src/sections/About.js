@@ -90,22 +90,23 @@ const About = () => {
           I am a <u><strong>Full-Stack Developer</strong></u>, Ex-Geotechnical Engineer looking for my next opportunity to further hone my <u><strong>problem solving</strong></u> and my budding interest in <u><strong>design</strong></u>.
           <br></br>
           <br></br>
-          In the past 4 years, having worked on major infrastructure projects like <u><strong>HS2</strong></u>, I have thoroughly enjoyed <u><strong>working together in teams</strong></u> to <u><strong>solve unconventional problems</strong></u>. Through opportunities in and outside of work, I was fortunate enough to be exposed to the world of coding and experience the satisfaction that comes from both <u><strong>solving a difficult coding problem</strong></u> and <u><strong>building an aesthetic, Front-End UI</strong></u>. Thus, I wish to start anew in a career where I can combine both problem solving and design.
+          In the past 4 years, having worked on major infrastructure projects like <u><strong>High Speed 2 rail</strong></u>, I have thoroughly enjoyed <u><strong>working together in teams</strong></u> to <u><strong>solve unconventional problems</strong></u>. Through opportunities in and outside of work, I was fortunate enough to be exposed to the world of coding and experience the satisfaction that comes from both <u><strong>solving a difficult coding problem</strong></u> and <u><strong>building an aesthetic, Front-End UI</strong></u>. Thus, I wish to start anew in a career where I can combine both problem solving and design.
           <br></br>
           <br></br>
           I have recently graduated from General Assembly's 12 week, <u><strong>Software Engineering Immersive Course</strong></u> which covered the fundamentals of <u><strong>Full-Stack development</strong></u> along with <u><strong>agile methodologies</strong></u>. This included, but not limited to, the following stack: <u><strong>React JS, JavaScript, Node JS with Express, Mongo DB, Django with Python</strong></u>.
           <br></br>
           <br></br>
-          This portfolio site has been created with mainly React JS, HTML5, SCSS (with Bulma) and other libraries. For details, please have a look at my GitHub repository for this.
+          When I am not Coding, you can find me on the <u><strong>Badminton</strong></u> courts, in the <u><strong>Muay Thai</strong></u> gym or at home playing <u><strong>Piano</strong></u> and <u><strong>Guitar</strong></u>.
+          <br></br>
+          <br></br>
+          This portfolio site has been created with mainly <u><strong>React JS, HTML5, SCSS (with Bulma) and other libraries</strong></u>. For details, please have a look at my <strong><a href="https://github.com/tams2429/portfolio_v2_main">GitHub repository</a></strong> for this.
           <br></br>
           <br></br>
           Check out my projects and look forward to collaborating with you soon!
           </p>
         </div>
-
       </div>
     </div>
-
   )
 }
 

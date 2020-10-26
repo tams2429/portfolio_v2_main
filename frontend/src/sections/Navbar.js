@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 
-
 function Navbar() {
   const [isClicked, setisClicked] = React.useState(false)
   const [navScrolled, setnavScrolled] = React.useState(false)

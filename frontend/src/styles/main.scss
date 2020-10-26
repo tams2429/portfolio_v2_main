@@ -1,31 +1,7 @@
 @import '~bulma/bulma.sass';
 @import "~animate.css/animate.css";
-
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Proza+Libre&family=Roboto&family=Rubik&display=swap');
 
-// font-family: 'Karla', sans-serif;
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Proza Libre', sans-serif;
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Rubik', sans-serif;
-// background: #f8f9fa;
-// background: #48A8;
-
-
-// .swiper-container {
-//   overflow: hidden;
-// }
-// .swiper-slide {
-//   width: 100%;
-//   height: 100%;
-// }
-// .swiper-slide.home-content{
-//   height: 100vh;
-// }
-// .swiper-slide.main-content{
-//   width: 100%;
-//   height: auto;
-// }
 
 //* General styles
 .main-container{
@@ -68,7 +44,6 @@
 }
 
 //* Navbar styles
-
 .navbar{
   background-color: transparent;
   .navbar-brand{
@@ -98,7 +73,6 @@
       .navbar-item:hover{
         border-bottom: 2px solid blue;
         background-color: transparent;
-        // color: black;
       }
     }
   }
@@ -120,7 +94,6 @@
 
 .navbar.is-scrolled{
   background-color: rgba(0, 0, 0, 0.9);
-
 }
 
 //* Home page styles
@@ -131,18 +104,15 @@
   justify-content: center;
   background-image: url('https://images.unsplash.com/photo-1513708929605-6dd0e1b081bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80');
   background-size: cover;
-  // margin-top: -70px;
   .box-border{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 90%;
-    // height: 70vh;
     border: 5px solid white;
     animation: titleBox 1s 26s ease;
     animation-fill-mode: forwards;
     .innerbox-border{
-      // height: 75%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -211,16 +181,13 @@
           }
         }
       }
-
     }
-
   }
 }
 
 @media only screen and (max-width: 1200px){
   .home-container{
     .box-border{
-      // height: 55vh;
       .innerbox-border{
         .titles{
           p {
@@ -244,10 +211,10 @@
     }
   }
 }
+
 @media only screen and (max-width: 900px){
   .home-container{
     .box-border{
-      // height: 50vh;
       .innerbox-border{
         .titles{
           p {
@@ -273,15 +240,14 @@
             }
           }
         }
-
       }
     }
   }
 }
+
 @media only screen and (max-width: 700px){
   .home-container{
     .box-border{
-      // height: 40vh;
       .innerbox-border{
         .titles{
           p {
@@ -305,7 +271,6 @@
             }
           }
         }
-
       }
     }
   }
@@ -314,9 +279,7 @@
 @media only screen and (max-width: 450px){
   .home-container{
     .box-border{
-      // height: 40vh;
       .innerbox-border{
-        // height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -357,13 +320,10 @@
             }
           }
         }
-
       }
-
     }
   }
 }
-
 
 @keyframes titleBox{
   0%{
@@ -382,8 +342,6 @@
     opacity: 1;
   }
 }
-
-
 
 //* About page styles
 .about-container{
@@ -425,8 +383,6 @@
       font-weight: bold;
     }
     .about-content{
-      // font-family: 'Karla', sans-serif;
-      // font-family: 'Montserrat', sans-serif;
       font-family: 'Rubik', sans-serif;
       font-size: 16px;
       line-height: 1.8;
@@ -434,16 +390,12 @@
   }
 }
 
-//#c9ada7 #3d405b
-
-
-
 .about-skills{
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: gray;
+  color: #ff9f1c;
   margin-top: 5%;
   .about-skills-title{
     font-family: 'Proza Libre', sans-serif;
@@ -507,9 +459,8 @@
 @media only screen and (max-width: 450px){
   .about-skills{
     padding-top: 20%;
-    .about-skills-container{
-      i{
-      }
+    .about-skills-title{
+      font-size: 42px;
     }
   }
 }
@@ -556,7 +507,6 @@
       }
     }
   }
-
 }
 
 @media only screen and (max-width:1000px){
@@ -630,11 +580,9 @@
       flex-direction: column;
       flex-wrap: wrap;
       width: 100%;
-      background: yellow;
       flex: 1;
       .thumbnails{
         height: 25%;
-        background: red;
         border: 1px solid gray;
         cursor: pointer;
         img{
@@ -759,7 +707,6 @@
   color: white;
   .footer-text{
     font-family: 'Karla', sans-serif;
-    // font-family: 'Proza Libre', sans-serif;
     >h2{
       font-size: 38px;
     }

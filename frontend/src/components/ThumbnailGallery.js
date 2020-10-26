@@ -129,7 +129,6 @@ function ThumbnailGallery() {
                 </a>
               </div>
             </div>
-
             <h3>React JS | HTML5 | SCSS | AntDesign | Django | Python | PostgreSQL DB - Solo</h3>
           </div>
           <div className="project-description">
