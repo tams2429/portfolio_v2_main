@@ -78,20 +78,20 @@ function ThumbnailGallery() {
 
 	const handleMouseEnter = () => {
 		return setprojectGifTriggered(!projectGifTriggered)
-  }
-  const handleMouseLeave = () => {
-    return setprojectGifTriggered(!projectGifTriggered)
-  }
+	}
+	const handleMouseLeave = () => {
+		return setprojectGifTriggered(!projectGifTriggered)
+	}
 	const handleClick = (e) => {
-    const activeIndex = e.target.getAttribute('data-index')
-    setactiveIndex(activeIndex)
-  }
+		const activeIndex = e.target.getAttribute('data-index')
+		setactiveIndex(activeIndex)
+	}
 
 	return(
 		<div>
 			<Tilt className="active-thumbnail Tilt"  options={{ max : 10, scale: 1.05, speed: 2000}}>
 				<img src={!projectGifTriggered ? thumbnails[activeIndex] : thumbnailGifs[activeIndex]} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
-	    </Tilt>
+			</Tilt>
 			<img src={thumbnail} data-index={index} onClick={handleClick}/>
 		</div>
 	)
