@@ -16,9 +16,9 @@ To demonstrate and showcase the skills and projects that I have worked on during
 
 My portfolio site has been created and designed to be both **desktop** and **mobile friendly**.
 
-![Working Gif of Portfolio Site Desktop View](/ReadmeResources/Portfolio.gif)
+![Working Gif of Portfolio Site Desktop View](/frontend/ReadmeResources/Portfolio.gif)
 
-![Working Gif of Portfolio Site Mobile View](/ReadmeResources/Portfolio-Mobile.gif)
+![Working Gif of Portfolio Site Mobile View](/frontend/ReadmeResources/Portfolio-Mobile.gif)
 
 ## Technologies 💻
 
@@ -40,7 +40,7 @@ My portfolio site has been created and designed to be both **desktop** and **mob
 
 - I started by drawing up a **wireframe** of the site on **Figma**, which made it easier for me during the coding process as I had already a good idea of what the product should look like
 
-![Figma Wireframing](/ReadmeResources/Portfolio-Figma.png)
+![Figma Wireframing](/frontend/ReadmeResources/Portfolio-Figma.png)
 
 - Next, as part of my **research**, I looked at some **example portfolio sites** to see what **libraries** and **frameworks** could be implemented on my site
 - I **planned** and **wrote** out the **main features** that I wanted to include on my portfolio (i.e. a **typing and erasing effect**, a **timeline element**, a **3D effect**, **animations with scroll**)
