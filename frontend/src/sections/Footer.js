@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <hr className='footer-divider'  data-aos="fade-right" data-aos-offset="-100" data-aos-duration="1000"></hr>
       <div className='footer-copyright'>
-        <p>©Siu-Kei-Tam 2020</p>
+        <p>©Siu-Kei-Tam 2021</p>
       </div>
     </div>
   )
