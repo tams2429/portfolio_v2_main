@@ -10,18 +10,20 @@ import PokeThumbnail from '../images/PokePacMan.png'
 import DirectorDictatorThumbnail from '../images/DirectorDictator.png'
 import TripSavvyThumbnail from '../images/TripSavvy.png'
 import Momen2umThumbnail from '../images/Momen2um.png'
+import TheHubThumbnail from '../images/TheHub.png'
 import PokeThumbnailGif from '../images/PokePacMan-GIF.gif'
 import DirectorDictatorThumbnailGif from '../images/DirectorDictator-GIF.gif'
 import TripSavvyThumbnailGif from '../images/TripSavvy-GIF.gif'
 import Momen2umThumbnailGif from '../images/Momen2um-GIF.gif'
+import TheHubThumbnailGif from '../images/TheHub-GIF.gif'
 
 function ThumbnailGallery() {
 
-  const [thumbnails, setthumbnails] = React.useState([PokeThumbnail, DirectorDictatorThumbnail, TripSavvyThumbnail, Momen2umThumbnail])
+  const [thumbnails, setthumbnails] = React.useState([PokeThumbnail, DirectorDictatorThumbnail, TripSavvyThumbnail, Momen2umThumbnail, TheHubThumbnail])
 
-  const [activeIndex, setactiveIndex] = React.useState("0")
+  const [activeIndex, setactiveIndex] = React.useState('0')
 
-  const [thumbnailGifs, setthumbnailGifs] = React.useState([PokeThumbnailGif, DirectorDictatorThumbnailGif, TripSavvyThumbnailGif, Momen2umThumbnailGif])
+  const [thumbnailGifs, setthumbnailGifs] = React.useState([PokeThumbnailGif, DirectorDictatorThumbnailGif, TripSavvyThumbnailGif, Momen2umThumbnailGif, TheHubThumbnailGif])
 
   const [projectGifTriggered, setprojectGifTriggered] = React.useState(false)
 
@@ -43,7 +45,7 @@ function ThumbnailGallery() {
   }
 
   const activeText = (activeIndex) => {
-    if (activeIndex === "0") {
+    if (activeIndex === '0') {
       return (
         <div className="project1-summary">
           <div className="project-headers">
@@ -66,7 +68,7 @@ function ThumbnailGallery() {
         </div>
       )
     }
-    if (activeIndex === "1") {
+    if (activeIndex === '1') {
       return (
         <div className="project2-summary">
           <div className="project-headers">
@@ -89,7 +91,7 @@ function ThumbnailGallery() {
         </div>
       )
     }
-    if (activeIndex === "2") {
+    if (activeIndex === '2') {
       return (
         <div className="project3-summary">
           <div className="project-headers">
@@ -112,7 +114,7 @@ function ThumbnailGallery() {
         </div>
       )
     }
-    if (activeIndex === "3") {
+    if (activeIndex === '3') {
       return (
         <div className="project4-summary">
           <div className="project-headers">
@@ -135,28 +137,54 @@ function ThumbnailGallery() {
         </div>
       )
     }
-  }
-
-  return(
-        <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" className="thumbnail-gallery-container" >
-          <div className="thumbnail-content">
-            <Tilt className="active-thumbnail Tilt"  options={{ max : 10, scale: 1.05, speed: 2000}}>
-              <img src={!projectGifTriggered ? thumbnails[activeIndex] : thumbnailGifs[activeIndex]} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
-            </Tilt>
-            <div className="thumbnail-grid">
-              {thumbnails.map((thumbnail, index) => {
-                return(
-                  <div className="thumbnails" key={index}>
-                    <img src={thumbnail} data-index={index} onClick={handleClick}/>
-                  </div>
-                )
-              })}
+    if (activeIndex === '4') {
+      return (
+        <div className="project5-summary">
+          <div className="project-headers">
+            <div className="project-title">
+              <h2>The Hub</h2>
+              <div className="project-links">
+                <a href="https://video-activity-hub.herokuapp.com/">
+                  <FontAwesomeIcon icon={faLink} className="link-icon"/>
+                </a>
+                <a href="https://github.com/ActivityHub/video-activity-hub">
+                  <FontAwesomeIcon icon={faGithub} className="github-icon"/>
+                </a>
+              </div>
             </div>
+            <h3>React JS | HTML5 | SCSS | Bootstrap | Twilio API | Google Firebase - Group</h3>
           </div>
-          <div className="text-content">
-            {activeText(activeIndex)}
+          <div className="project-description">
+            The Hub is a social experiences web application designed by a team of 2 UX Designers & 4 Software Developers and built over 2 days, as a solution to General Assembly Boston Hackathon to reimagine pre-pandemic social activities and inspire togetherness.
+
+            This was inspired by combining AirBnB Experiences and Zoom Breakout rooms. Ultimately, our aim was to not only bring people together from across the world but to also encourage users to self improve and continue to learn new things even after the pandemic.
+            This is a full-stack app utilising the following technologies: <strong>React JS, HTML5, SCSS, Bootstrap, Twilio Video API and Google Firebase.</strong>
           </div>
         </div>
+      )
+    }
+  }
+
+  return (
+    <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" className="thumbnail-gallery-container" >
+      <div className="thumbnail-content">
+        <Tilt className="active-thumbnail Tilt"  options={{ max: 10, scale: 1.05, speed: 2000 }}>
+          <img src={!projectGifTriggered ? thumbnails[activeIndex] : thumbnailGifs[activeIndex]} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+        </Tilt>
+        <div className="thumbnail-grid">
+          {thumbnails.map((thumbnail, index) => {
+            return (
+              <div className="thumbnails" key={index}>
+                <img src={thumbnail} data-index={index} onClick={handleClick}/>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      <div className="text-content">
+        {activeText(activeIndex)}
+      </div>
+    </div>
   )
 }
 

@@ -568,7 +568,7 @@
       height: auto;
       width: 100%;
       background: #333;
-      flex: 4;
+      flex: 5;
       border: 1px solid gray;
       img{
         width: 100%;
@@ -582,7 +582,7 @@
       width: 100%;
       flex: 1;
       .thumbnails{
-        height: 25%;
+        height: 20%;
         border: 1px solid gray;
         cursor: pointer;
         img{
@@ -667,7 +667,7 @@
         flex-direction: row;
         flex: initial;
         .thumbnails{
-          width: 25%;
+          width: 20%;
           height: auto;
           img{
             width: 100%;
